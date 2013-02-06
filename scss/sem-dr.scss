@@ -1,0 +1,351 @@
+@import "compass/css3";
+@import "base";
+@import "responsive.scss";
+
+body{
+	background: $light-khaki;
+	margin: 0px;
+	#BodyWrapper{
+		@include column(12, no-margin);
+		max-width: 760px;
+		margin: 0px auto;
+		float: none;
+		#ContentWrapper{
+			background: $white;
+			@include arial;
+			@include box-shadow (2px 2px 2px #ccc);
+			@include column(12, no-margin);
+			#Header{
+				@include column(12, no-margin);
+				padding: 0px 20px 20px 20px;
+				@media (max-width: 600px){
+					padding-bottom: 8px;
+				}
+				img{
+					float: left;
+					@media (max-width: 600px){
+						@include column(3, no-margin);
+					}
+					@media (max-width: 400px){
+						@include column(4, no-margin);
+					}
+				}
+				.tagline{
+					float: left;
+					margin: 40px 0px 0px 8px;
+					font-size: 13px;
+					font-style: italic;
+					@include georgia;
+					color: $khaki-gray;
+					@media (max-width: 600px){
+						display: none;
+					}
+				}
+			}
+			h1{
+				color: $white;
+				@include georgia;
+				font-size: 26px;
+				font-weight: normal;
+				margin-top: 0px;
+			}
+			h2{
+				font-size: 18px;
+				margin: 0px;
+				font-weight: normal;
+			}
+			p, span, td{
+				font-size: 13px;
+			}
+			.btn{
+				@include btn-blue-grad;
+			}
+			a{
+				color: $blue;
+				font-weight: bold;
+				font-size: 13px;
+				text-decoration: none;
+			}
+			.required{
+				float: left;
+				font-size: 11px;
+				color: $gray;
+				margin: 8px 0px 0px 0px;
+			}
+		}
+		#Footer{
+			@include column(12);
+			margin-top: 20px;
+			text-align: center;
+			color: $khaki;
+			a{
+				@include georgia;
+				font-size: 12px;
+				color: $khaki;
+				text-decoration: none;
+			}
+			p{
+				font-size: 11px;
+			}
+		}
+		
+	}
+	
+}
+
+#Homepage #Content{
+	#FormContainer{
+		@include column(12, no-margin);
+		background: url('../images/backgrounds/hands-with-photo.jpg') no-repeat;
+		font-size: 12px;
+		padding: 3%;
+		#FormBox{
+			@include column(10, no-margin);
+			background: $white;
+			padding: 3%;
+			@media (max-width: 744px){
+				@include column(12, no-margin);
+			}
+			@media (max-width: 600px){
+				padding: 4%;
+			}
+			p, span{
+				font-size: 12px;
+				margin-top: 0px;
+			}
+			#FirstName{
+				@include column(3, no-margin-left);
+				@media (max-width: 600px){
+					@include column(6, no-margin-left);
+				}
+				@media (max-width: 400px){
+					@include column(12, no-margin);
+				}
+			}
+			#LastName{
+				@include column(3);
+				@media (max-width: 600px){
+					@include column(6, no-margin-right);
+				}
+				@media (max-width: 400px){
+					@include column(12, no-margin);
+				}
+			}
+			#DeathYear{
+				@include column(2);
+				@media (max-width: 600px){
+					@include column(6, no-margin-left);
+				}
+				@media (max-width: 400px){
+					@include column(12, no-margin);
+				}
+			}
+			#State{
+				@include column(4, no-margin-right);
+				@media (max-width: 600px){
+					@include column(6, no-margin-right);
+				}
+				@media (max-width: 400px){
+					@include column(12, no-margin);
+				}
+			}
+			.field{
+				margin-bottom: 12px;
+				label{
+					@include column(12, no-margin);
+					font-weight: bold;
+					margin-bottom: 4px;
+				}
+				select, input{
+					@include column(12, no-margin);
+					height: 24px;
+				}
+			}
+			#RecordTypeContainer{
+				@include column(9, no-margin-left);
+				@media (max-width: 600px){
+					@include column(7, no-margin);
+				}
+				@media (max-width: 400px){
+					@include column(12, no-margin);
+				}
+				label{
+					@include column(12, no-margin);
+					font-weight: bold;
+					margin-bottom: 4px;
+				}
+				input{
+					margin: 0;
+				}
+				.record-type{
+					float: left;
+					margin: 0px 3% 12px 0px;
+					@media (max-width: 600px){
+						display: none;
+					}
+				}
+				select{
+					display: none;
+					margin-bottom: 12px;
+					@include column(4, no-margin-left);
+					@media (max-width: 600px){
+						display: block;
+					}
+				}
+				#HardCopy{
+					@include column(12, no-margin-left);
+				}
+				
+			}
+			.btn-container{
+				@media (max-width: 600px){
+					@include column(5, no-margin);
+					float: right;
+				}
+				@media (max-width: 400px){
+					@include column(12, no-margin);
+				}
+				.btn{
+					float: right;
+				}
+			}
+			.required{
+				float: right;
+				margin-top: 8px;
+			}
+		}
+	}
+	#BenefitsContainer{
+			@include column(10, no-margin);
+			@media (max-width: 744px){
+				@include column(12, no-margin);
+			}
+			padding: 20px;
+			font-size: 13px;
+			#Benefits{
+				@include column(8, no-margin-left);
+				li{
+					margin-bottom: 15px;
+				}
+				@media (max-width: 400px){
+					@include column(12, no-margin);
+				}
+				a{
+					text-decoration: underline;
+				}
+			}
+			#AsSeenIn{
+				@include column(4, no-margin-right);
+				text-align: center;
+				font-size: 18px;
+				color: $gray;
+				img{
+					display: block;
+					margin: 8px auto;
+				}
+				@media (max-width: 400px){
+					@include column(12, no-margin);
+					img{
+						float: left;
+					}
+					.family-tree-magazine, .wall-street-journal{
+						display: block;
+						margin: 0px auto;
+					}
+				}
+			}
+	}
+}
+
+#Checkout #Content{
+	@include column(12, no-margin);
+	background-color: #333;
+	padding: 3%;
+	p{
+		color: $white;
+	}
+	#Container{
+		background-color: $white;
+		padding: 3%;
+		#Inner{
+			border: 1px solid $gray;
+			padding: 3%;
+		}
+		p{
+			color: $near-black;
+		}
+		label{
+			font-weight: bold;
+			margin-bottom: 4px;
+		}
+		#FormBox{
+			@include column(7, no-margin-left);
+			border-right: 1px solid $light-gray;
+			padding: 0px 12px 0px 0px;
+			@media (max-width: 400px){
+				@include column(12, no-margin);
+				padding: 0px;
+				border: none;
+			}
+			label{
+				@include column(5, no-margin-left);
+				font-size: 12px;
+				text-align: right;
+				@media (max-width: 600px){
+					@include column(12, no-margin);
+					text-align: left;
+				}
+			}
+			.field{
+				@include column(12, no-margin);
+				margin-bottom: 8px;
+			}
+			.field input, .btn-container{
+				@include column(7, no-margin-right);
+				@media (max-width: 600px){
+					@include column(12, no-margin);
+				}
+				float: right;
+			}
+			.btn{
+				float: left;
+			}
+			.required{
+				color: $gray;
+			}
+		}
+		#Total{
+			@include column(5, no-margin);
+			padding-left: 12px;
+			@media (max-width: 400px){
+				@include column(12, no-margin);
+				padding: 12px 0px 0px 0px;
+				border-top: 1px solid $light-gray;
+			}
+			table{
+				border-collapse: collapse;
+				td{
+					padding: 8px 0px;
+				}
+				td.total, td.subtotal{
+					padding-left: 8px;
+				}
+				.todays-total{
+					td{
+						border-top: 1px solid $light-gray;
+						border-bottom: 1px solid $light-gray;
+					}
+					.subtotal{
+						color: $lime-green;
+					}
+				}
+			}
+		}
+		#ButtonPayPal{
+			background: url('../images/buttons/paypal.gif') no-repeat;
+			border: none;
+			height: 40px;
+			width: 143px;
+		}
+	}
+}

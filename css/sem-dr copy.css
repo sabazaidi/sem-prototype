@@ -1,0 +1,232 @@
+/* SASS functions and mixins*/
+/* line 7, ../scss/sem-dr copy.scss */
+#Homepage.death-records {
+  background: #f5f4f3;
+  margin: 0px;
+}
+/* line 10, ../scss/sem-dr copy.scss */
+#Homepage.death-records #BodyWrapper {
+  width: 100.0%;
+  float: left;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+  vertical-align: top;
+  max-width: 744px;
+  margin: 0px auto;
+  float: none;
+}
+/* line 15, ../scss/sem-dr copy.scss */
+#Homepage.death-records #BodyWrapper #ContentWrapper {
+  background: white;
+  -webkit-box-shadow: 2px 2px 2px #cccccc;
+  -moz-box-shadow: 2px 2px 2px #cccccc;
+  box-shadow: 2px 2px 2px #cccccc;
+  width: 100.0%;
+  float: left;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+  vertical-align: top;
+}
+/* line 19, ../scss/sem-dr copy.scss */
+#Homepage.death-records #BodyWrapper #ContentWrapper #Header {
+  width: 100.0%;
+  float: left;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+  vertical-align: top;
+  padding: 0px 20px 20px 20px;
+}
+/* line 22, ../scss/sem-dr copy.scss */
+#Homepage.death-records #BodyWrapper #ContentWrapper #Header img, #Homepage.death-records #BodyWrapper #ContentWrapper #Header .tagline {
+  float: left;
+}
+/* line 25, ../scss/sem-dr copy.scss */
+#Homepage.death-records #BodyWrapper #ContentWrapper #Header .tagline {
+  margin: 40px 0px 0px 8px;
+}
+/* line 30, ../scss/sem-dr copy.scss */
+#Homepage.death-records #BodyWrapper #ContentWrapper #Content #FormContainer {
+  width: 100.0%;
+  float: left;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+  vertical-align: top;
+  background: #333;
+  padding: 20px;
+}
+/* line 34, ../scss/sem-dr copy.scss */
+#Homepage.death-records #BodyWrapper #ContentWrapper #Content #FormContainer h1 {
+  color: white;
+  font-family: Georgia;
+  font-size: 26px;
+  font-weight: normal;
+  margin-top: 0px;
+}
+/* line 41, ../scss/sem-dr copy.scss */
+#Homepage.death-records #BodyWrapper #ContentWrapper #Content #FormContainer #FormBox {
+  width: 83.33333%;
+  float: left;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+  vertical-align: top;
+  background: white;
+  padding: 20px;
+}
+/* line 45, ../scss/sem-dr copy.scss */
+#Homepage.death-records #BodyWrapper #ContentWrapper #Content #FormContainer #FormBox p {
+  margin-top: 0px;
+}
+/* line 48, ../scss/sem-dr copy.scss */
+#Homepage.death-records #BodyWrapper #ContentWrapper #Content #FormContainer #FormBox .field {
+  width: 24.16667%;
+  float: left;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-right: 0.833333%;
+  margin-left: 0;
+  vertical-align: top;
+}
+/* line 50, ../scss/sem-dr copy.scss */
+#Homepage.death-records #BodyWrapper #ContentWrapper #Content #FormContainer #FormBox .field select, #Homepage.death-records #BodyWrapper #ContentWrapper #Content #FormContainer #FormBox .field input {
+  width: 99.16667%;
+  float: left;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-right: 0.833333%;
+  margin-left: 0;
+  vertical-align: top;
+}
+/* line 54, ../scss/sem-dr copy.scss */
+#Homepage.death-records #BodyWrapper #ContentWrapper #Content #FormContainer #FormBox #DeathYear {
+  width: 15.83333%;
+  float: left;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-right: 0.833333%;
+  margin-left: 0;
+  vertical-align: top;
+}
+/* line 57, ../scss/sem-dr copy.scss */
+#Homepage.death-records #BodyWrapper #ContentWrapper #Content #FormContainer #FormBox #State {
+  width: 33.33333%;
+  float: left;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+  vertical-align: top;
+}
+/* line 60, ../scss/sem-dr copy.scss */
+#Homepage.death-records #BodyWrapper #ContentWrapper #Content #FormContainer #FormBox #RecordTypeContainer {
+  width: 82.5%;
+  float: left;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-right: 0.833333%;
+  margin-left: 0;
+  vertical-align: top;
+}
+/* line 62, ../scss/sem-dr copy.scss */
+#Homepage.death-records #BodyWrapper #ContentWrapper #Content #FormContainer #FormBox #RecordTypeContainer label {
+  width: 100.0%;
+  float: left;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+  vertical-align: top;
+}
+/* line 65, ../scss/sem-dr copy.scss */
+#Homepage.death-records #BodyWrapper #ContentWrapper #Content #FormContainer #FormBox #RecordTypeContainer input {
+  margin: 0;
+}
+/* line 68, ../scss/sem-dr copy.scss */
+#Homepage.death-records #BodyWrapper #ContentWrapper #Content #FormContainer #FormBox #RecordTypeContainer .record-type {
+  float: left;
+  margin-right: 3%;
+}
+/* line 71, ../scss/sem-dr copy.scss */
+#Homepage.death-records #BodyWrapper #ContentWrapper #Content #FormContainer #FormBox #RecordTypeContainer #HardCopy {
+  width: 100.0%;
+  float: left;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+  vertical-align: top;
+}
+/* line 75, ../scss/sem-dr copy.scss */
+#Homepage.death-records #BodyWrapper #ContentWrapper #Content #FormContainer #FormBox .btn-blue {
+  width: 16.66667%;
+  float: left;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+  vertical-align: top;
+}
+@media (max-width: 744px) {
+  /* line 41, ../scss/sem-dr copy.scss */
+  #Homepage.death-records #BodyWrapper #ContentWrapper #Content #FormContainer #FormBox {
+    width: 100.0%;
+    float: left;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+    vertical-align: top;
+  }
+}
+/* line 83, ../scss/sem-dr copy.scss */
+#Homepage.death-records #BodyWrapper #ContentWrapper #Content #BenefitsContainer {
+  width: 100.0%;
+  float: left;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+  vertical-align: top;
+  padding: 20px;
+}
+/* line 86, ../scss/sem-dr copy.scss */
+#Homepage.death-records #BodyWrapper #ContentWrapper #Content #BenefitsContainer #Benefits {
+  width: 65.83333%;
+  float: left;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-right: 0.833333%;
+  margin-left: 0;
+  vertical-align: top;
+}
+/* line 89, ../scss/sem-dr copy.scss */
+#Homepage.death-records #BodyWrapper #ContentWrapper #Content #BenefitsContainer #AsSeenIn {
+  width: 32.5%;
+  float: left;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 0.833333%;
+  margin-right: 0;
+  vertical-align: top;
+}
+/* line 95, ../scss/sem-dr copy.scss */
+#Homepage.death-records #BodyWrapper #Footer {
+  width: 98.33333%;
+  float: left;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-right: 0.833333%;
+  margin-left: 0.833333%;
+  vertical-align: top;
+  margin-top: 20px;
+  text-align: center;
+}

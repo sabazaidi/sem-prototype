@@ -1,0 +1,44 @@
+@import "compass/css3";
+
+/* SASS functions and mixins*/
+
+
+@mixin column($colnum,$margin:margin) {
+	width: get-width($colnum,$margin);
+	float:left;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	@if $margin == 'no-margin' {
+		margin-left:0;
+		margin-right:0;
+	}
+	@else if $margin == 'no-margin-left' {
+		margin-right:0.833333%;
+		margin-left:0;
+	}
+	@else if $margin == 'no-margin-right' {
+		margin-left:0.833333%;
+		margin-right:0;
+	}
+	@else {
+		margin-right:0.833333%;
+		margin-left:0.833333%;
+	}
+	vertical-align:top;
+	
+}
+@function get-width($colnum,$margin){
+	@if $margin == 'no-margin' {
+		@return ($colnum * 08.333333%);
+	}
+	@else if $margin == 'no-margin-left' or $margin == 'no-margin-right'{
+		@return ((($colnum * 80) - 8) / 960) * 100%;
+	}
+	@else {
+		@return ((($colnum * 80) - 16) / 960) * 100%;
+	}
+}
+
+//create a column with @include column(x,y);
+// x=numbers of columns (1-12);
+// y= margins (acceptable values are [blank] for regular margins, no-margin, no-margin-left, or no-margin-right)

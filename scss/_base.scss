@@ -1,0 +1,45 @@
+$light-khaki: #f5f4f3;
+$khaki-gray: #848477;
+$khaki: #938e83;
+$white: #ffffff;
+$light-blue: #7bb7dc;
+$blue: #287bb4;
+$dark-blue: #2b7db5;
+$gray: #999;
+$light-gray: #cccccc;
+$near-black: #1f1f1d;
+$lime-green: #92c94e;
+
+/*******************************************
+ * FOUNDATION MIXINS					[FOMIXINS]
+ ******************************************/
+
+@mixin georgia {
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+@mixin arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*******************************************
+ * BUTTONS						
+ ******************************************/
+@mixin btn-blue-grad {
+    background: $dark-blue /* BG for Old Browsers */;
+    @include background-image(linear-gradient(white 0%,$light-blue 2%,$dark-blue));
+    border:1px solid $dark-blue;
+    @include box-shadow(2px 1px 4px #aaa);
+    @include border-radius(4px);
+    color:white;
+    cursor:pointer;
+    display:block;
+    font-weight:bold;
+    font-size: 13px;
+    padding: 10px;
+    margin-top: 12px;
+    @include arial;
+    @include text-shadow(2px 2px $dark-blue);
+	-pie-background: linear-gradient($light-blue, $dark-blue); 
+	behavior: url(../member/PIE.htc);
+}
